@@ -1,5 +1,6 @@
 import React from "react";
 import Project from './Project'
+import { Link } from "react-router-dom";
 
 const sampleProject = {
     projName: 'Test Project',
@@ -32,7 +33,9 @@ export default function ProjectList(props){
             <div className='projects-container'>
                 {
                     projects.map((proj, idx) => {
-                        return <Project project={proj} key={idx}/>
+                        return (
+                            <Project project={proj} key={idx}/>
+                        )
                     })
                 }
 

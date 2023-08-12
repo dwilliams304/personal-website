@@ -138,15 +138,47 @@ label{
 }
 
 .project-card{
-  margin: 15px 20px;
+  margin: 30px 40px;
   border: 2px solid white;
   border-radius: 10px;
   width: 25%;
-  &:hover{
-    transition: 0.2s ease-in-out;
-    border-radius: 0px;
-    scale: 1.1;
-    border: 2px solid cyan;
-    cursor: pointer; 
+  height: 200px;
+    &:hover{
+      transition: 0.2s ease-in-out;
+      border-radius: 0px;
+      scale: 1.1;
+      border: 2px solid cyan;
+      cursor: pointer; 
+      .project-name{
+        transition: 15s ease-in-out;
+        text-shadow: rgb(200, 255, 246) 1px 0 10px
+      }
+    }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-}
+
+  .project-name{
+    margin: 20px 50px;
+    padding-bottom: 10px;
+  }
+  .projDet{
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 30px;
+  }
+  .project-description{
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 5px 0px;
+    margin: 0px 10px;
+    border-radius: 20px;
+  }
+
+  .languages{
+    color: rgb(150, 225, 255);
+    text-shadow: rgb(0, 0, 0) 0px 0 5px;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    padding: 5px;
+  }

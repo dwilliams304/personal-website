@@ -1,3 +1,3 @@
-const OpenLink = (link) => {
+ const OpenLink = (link) => {
     window.open(link);
 }
