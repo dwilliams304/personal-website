@@ -1,23 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './Components/Nav';
+import Home from './Components/Home';
+import ProjectList from './Components/ProjectList';
+import Contact from './Components/Contact';
+import DummyData from './Helpers/DummyData';
+
+const socialLinks = {
+  github: '',
+  linkedin: '',
+  twitter: ''
+}
+
+
 
 function App() {
+
+  const openLink = (link) => {
+    window.open(link);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Home />
+      <ProjectList projects={DummyData}/>
+      <Contact />
+      <footer>
+        <h2>Property of Davis Williams.</h2>
+        <p>Other stuff.</p>
+      </footer>
     </div>
   );
 }
