@@ -148,8 +148,8 @@ label{
   margin: 30px 40px;
   border: 2px solid white;
   border-radius: 10px;
-  width: 25%;
-  height: 200px;
+  width: 25vw;
+  height: 32.5vh;
   overflow: hidden;
     &:hover{
       transition: 0.2s ease-in-out;
