@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/Nav';
 import Home from './Components/Home';
@@ -31,10 +30,12 @@ function App() {
           <Route path='contact' element={<Contact />} />
           <Route path='projects/:id' element={<Project /> } />
         </Routes>
-      <footer>
-        <h2>Property of Davis Williams.</h2>
-        <p>Other stuff.</p>
-      </footer>
+      {/* <div>
+        <footer>
+          <h2>Property of Davis Williams.</h2>
+          <p>Other stuff.</p>
+        </footer>
+      </div> */}
     </div>
   );
 }
