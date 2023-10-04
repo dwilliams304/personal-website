@@ -19,7 +19,6 @@ function ProjectPage(){
         }
     }, [id])
 
-    if(!project) return <h1>No project was found here!</h1>
 
     return(
         <div className="project-page-container">

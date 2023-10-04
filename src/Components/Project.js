@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 
 
 export default function Project(props){
-    const project = props.project;
+    const {project} = props;
     const nav = useNavigate();
 
 
