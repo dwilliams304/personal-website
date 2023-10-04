@@ -168,8 +168,9 @@ label{
   }
 
   .project-name{
-    margin: 20px 50px;
     padding-bottom: 10px;
+    width: 100%;
+    height: 5vh;
   }
   .projDet{
     color: white;
@@ -181,7 +182,7 @@ label{
     margin: 0px 10px;
     border-radius: 20px;
   }
-
+  
   .languages{
     color: rgb(150, 225, 255);
     text-shadow: rgb(0, 0, 0) 0px 0 5px;

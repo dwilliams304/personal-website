@@ -26,6 +26,9 @@ export default function ProjectList(props){
     return(
         <div>
             <h2 className='project-headers page-title'>Here are some of my projects.</h2>
+            <h4>Clicking on any of these will redirect you to either a dedicated project
+                page hosted elsewhere, or the github page.
+            </h4>
             <div className='filters'>
             <fieldset>
                 <legend>Project Type</legend>
@@ -41,7 +44,8 @@ export default function ProjectList(props){
                         return (
                             <Project project={proj} key={idx}/>
                         )
-                    }) : <h2 className="no-projs-header">No projects matching these filters...</h2>
+                    }) 
+                    : <h2 className="no-projs-header">No projects currently under "{filter}"! (Check back later)</h2>
                 }
 
             </div>
