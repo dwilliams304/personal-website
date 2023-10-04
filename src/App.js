@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './Components/Nav';
 import Home from './Components/Home';
 import ProjectList from './Components/ProjectList';
-import Project from './Components/Project';
+import ProjectPage from './Components/ProjectPage';
 import Contact from './Components/Contact';
 import DummyData from './Helpers/Data';
 import {Routes, Route} from 'react-router-dom'
@@ -28,14 +28,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='projects' element={<ProjectList projects={DummyData} />} />
           <Route path='contact' element={<Contact />} />
-          <Route path='projects/:id' element={<Project /> } />
+          <Route path='projects/:id' element={<ProjectPage /> } />
         </Routes>
-      {/* <div>
-        <footer>
-          <h2>Property of Davis Williams.</h2>
-          <p>Other stuff.</p>
-        </footer>
-      </div> */}
     </div>
   );
 }

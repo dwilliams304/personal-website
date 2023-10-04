@@ -26,9 +26,7 @@ export default function ProjectList(props){
     return(
         <div>
             <h2 className='project-headers page-title'>Here are some of my projects.</h2>
-            <h4>Clicking on any of these will redirect you to either a dedicated project
-                page hosted elsewhere, or the github page.
-            </h4>
+            <h4>Clicking on any of these will redirect you to their page giving more description/details.</h4>
             <div className='filters'>
             <fieldset>
                 <legend>Project Type</legend>

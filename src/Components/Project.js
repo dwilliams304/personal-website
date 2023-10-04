@@ -1,14 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 
 export default function Project(props){
     const project = props.project;
+    const nav = useNavigate();
 
-    const toProject = () => {
-        window.open(project.extLink);
+
+    const toPage = id => {
+        nav(`${id}`);
     }
     return(
-        <div onClick={toProject} 
+        <div onClick={() => toPage(project.projID)} 
         className={`project-card`}
         style={{backgroundImage:`url(${project.img})`}}>
             <div>
