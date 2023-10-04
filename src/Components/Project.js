@@ -18,11 +18,12 @@ export default function Project(props){
             </div>
 
             <div className='languages'>
-                {
-                    project.languages.map(lang => {
-                        return (<h2>{lang}//&nbsp;</h2>)
+                {/* {
+                    project.categories.language.map(lang => {
+                        return (<h2>{lang}//&nbsp;</h2>) //eslint-disable-line
                     })
-                }
+                } */}
+                {project.categories.language}
             </div>
 
         </div>
