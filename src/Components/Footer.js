@@ -7,7 +7,6 @@ function Footer(props){
     const {openInNewWindow} = props;
     return(
         <footer>
-            <h2>Property of Davis Williams</h2>
             <button className="social-icn" onClick={() => openInNewWindow(github)}>
                 <FaGithub />
             </button>
