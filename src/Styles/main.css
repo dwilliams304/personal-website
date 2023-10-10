@@ -29,6 +29,10 @@ header{
   border-bottom: 3px solid var(--secondaryColor);
 }
 
+header nav{
+  margin-left: auto;
+}
+
 nav a {
   margin: 0 2rem;
   color: var(--textColor);
@@ -109,4 +113,10 @@ footer .social-icn {
   outline: none;
   color: var(--textColor);
   font-size: 1.8rem;
+
+  &:hover{
+    transition: 0.2s;
+    color: var(--secondaryColor);
+    scale: 1.2;
+  }
 }

@@ -19,6 +19,10 @@ function App() {
     window.open(link);
   }
 
+  const specialAction = () => {
+    
+  }
+
   return (
     <div>
       <NavBar />
