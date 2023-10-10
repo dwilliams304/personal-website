@@ -40,6 +40,20 @@
     }
 }
 
+.container {
+    border: 2px solid var(--secondaryColor);
+    margin: 1rem 7rem;
+    border-style: inset;
+}
+
+.about-me{
+    border-top: 1px solid var(--secondaryColor);
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    padding: 1em;
+}
+
+
 @keyframes coin-hover {
     0%{
         transform: translateY(0.2em);
