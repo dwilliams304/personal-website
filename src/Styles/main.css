@@ -6,21 +6,23 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(146, 146, 146);
+  background-color: var(--tertiaryColor);
   font-family: 'Montserrat', sans-serif;
 }
 
 :root{
-  --mainColor: black;
-  --secondaryColor: gray;
-  --tertiaryColor: cyan;
-  --textColor: white;
+  --mainColor: #191919;
+  --secondaryColor: #F15025;
+  --tertiaryColor: #CED0CE;
+  --tertiaryLighter: #E6E8E6;
+  --textColor: #FFFFFF;
 }
 
 
 footer{
-  background-color: black;
-  color: white;
+  background-color: var(--mainColor);
+  border-top: 3px solid var(--secondaryColor);
+  color: var(--textColor);
   min-height: 50px;
   width: 100%;
   position: absolute;

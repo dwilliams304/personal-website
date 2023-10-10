@@ -1,26 +1,28 @@
-import React from "react";
-import { Navigators } from "../Helpers/Helpers";
-import { useNavigate } from "react-router";
-
+import React, {useRef} from "react";
+import { FaBars, FaTimes } from 'react-icons/fa'; 
 
 
 export default function NavBar(props){
-    const {GitHub, LinkedIn} = props;
-    const nav = useNavigate();
+    const navRef = useRef();
 
+    const showNav = () => {
+        navRef.current.classList.toggle('responsive_nav');
+    }
 
     return(
-        <nav className='nav-bar'>
-            <h2 className='nav-header'>daviswilliams.dev</h2>
-            <div className='nav-btns'>
-                <button className='nav-btn' onClick={() => nav('/')}>Home</button>
-                <button className='nav-btn' onClick={() => nav('/projects')}>Projects</button>
-                <button className='nav-btn' onClick={() => nav('/contact')}>Contact</button>
-            </div>
-
-        </nav>
+        <header>
+            <h3>daviswilliams.portfolio</h3>
+            <nav ref={navRef}>
+                <a href='/'>Home</a>
+                <a href='/projects'>Projects</a>
+                <a href='/contact'>Contact</a>
+                <button className='nav-btn nav-close-btn' onClick={showNav}>
+                    <FaTimes />
+                </button>
+            </nav>
+            <button className='nav-btn' onClick={showNav}>
+                <FaBars />
+            </button>
+        </header>
     )
-
-
-
 }
