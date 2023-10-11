@@ -30,10 +30,12 @@ header{
   min-height: 80px;
   padding: 0 2rem;
   border-bottom: 3px solid var(--secondaryColor);
+  z-index: 1;
 }
 
 header nav{
   margin-left: auto;
+  z-index: 1;
 }
 
 nav a {

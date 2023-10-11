@@ -16,18 +16,18 @@ export default function Home(){
                     <h2>My name is Davis.</h2>
                     <p>Welcome to my portfolio.</p>
                     <p>I am an aspiring Fullstack Web Developer with a strong foundation in customer
-                    service and a passion for creating user-centric web applications.<br/> Proficient in
+                    service and a passion for creating user-centric web applications. Proficient in
                     JavaScript and ReactJS, actively developing skills through self-study and
                     ongoing learning.</p>
 
                     <p>This website is designed to show off all projects I've worked on and is also to
-                        help showcase some of my skills with designing, programming, and anything <br/> else
+                        help showcase some of my skills with designing, programming, and anything else
                         related to web development!
                     </p>
                 </div>
                 <div className="skills about-me">
                     <h3>Here Are Some of My Skills:</h3>
-                    <p>JavaScript, C#, ReactJS, Redux, NodeJS, HTML, CSS, REST APIs, Frontend/Backend Development <br/>
+                    <p>JavaScript, C#, ReactJS, Redux, NodeJS, HTML, CSS, REST APIs, Frontend/Backend Development
                         Game Development, Unity Engine, Unreal Engine</p>
                 </div>
 

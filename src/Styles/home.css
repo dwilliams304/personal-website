@@ -7,7 +7,6 @@
     max-width: 250px;
     border: 5px solid var(--mainColor);
     border-radius: 100%;
-    z-index: 1;
     animation: coin-hover 5000ms infinite;
 }
 
@@ -58,6 +57,10 @@
     padding: 1em;
 }
 
+.about-me p {
+    margin: 1rem 2vw;
+}
+
 
 @keyframes coin-hover {
     0%{
@@ -96,3 +99,14 @@
     95%{ scale: 1.3; }
     100%{ scale: 1.1; }
 }
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        margin: 15px 0px;
+    }
+
+    .about-me p {
+        margin: 5px;
+    }
+
+  }
