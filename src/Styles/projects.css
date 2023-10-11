@@ -116,12 +116,9 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .projDet p,
-    .languages {
-        visibility: hidden;
-        margin: 0;
-        padding: 0;
+@media only screen and (max-width: 680px) {
+    .projects-container{
+        margin: 2rem 0;
     }
 
     .projDet {
