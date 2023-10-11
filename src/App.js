@@ -20,11 +20,11 @@ function App() {
   }
 
   const specialAction = () => {
-    
+
   }
 
   return (
-    <div>
+    <>
       <NavBar />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -33,7 +33,7 @@ function App() {
           <Route path='projects/:id' element={<ProjectPage /> } />
         </Routes>
       <Footer openInNewWindow={openInNewWindow} socialLinks={socialLinks}/>
-    </div>
+    </>
   );
 }
 

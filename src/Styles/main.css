@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
-html, 
-body {
+html{
+  min-height: 100%;
+}
+
+html, body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -97,7 +100,7 @@ footer{
   background-color: var(--mainColor);
   border-top: 3px solid var(--secondaryColor);
   color: var(--textColor);
-  min-height: 50px;
+  height: 3rem;
   width: 100%;
   position: relative;
   bottom: 0;
@@ -105,8 +108,7 @@ footer{
 }
 
 footer .social-icn {
-  padding: 5px;
-  margin: 1rem 2rem;
+  margin: 0.5rem 2rem;
   cursor: pointer;
   background-color: transparent;
   border: none;

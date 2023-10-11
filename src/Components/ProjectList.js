@@ -24,18 +24,19 @@ export default function ProjectList(props){
     }
 
     return(
-        <div>
+        <div className="project-page">
             <h2 className='project-headers page-title'>Here are some of my projects.</h2>
-            <h4>Clicking on any of these will redirect you to their page giving more description/details.</h4>
+            <p>Clicking on any of these will redirect you to their page giving more description/details.</p>
+            <p>You can also select a filter to narrow down the options!</p>
             <div className='filters'>
-            <fieldset>
-                <legend>Project Type</legend>
-                <label><input type="radio" name="filter" value="all" onChange={clearFilters}/>&nbsp;All</label>
-                <label><input type="radio" name="filter" value="website" onChange={switchFilter}/>&nbsp;Website</label>
-                <label><input type="radio" name="filter" value="app" onChange={switchFilter}/>&nbsp;App</label>
-                <label><input type="radio" name="filter" value="game" onChange={switchFilter}/>&nbsp;Game</label>
-            </fieldset>
-        </div>
+                <fieldset>
+                    <legend>Project Type</legend>
+                    <label><input type="radio" name="filter" value="all" onChange={clearFilters}/>&nbsp;All</label>
+                    <label><input type="radio" name="filter" value="website" onChange={switchFilter}/>&nbsp;Website</label>
+                    {/* <label><input type="radio" name="filter" value="app" onChange={switchFilter}/>&nbsp;App</label> */}
+                    <label><input type="radio" name="filter" value="game" onChange={switchFilter}/>&nbsp;Game</label>
+                </fieldset>
+            </div>
             <div className='projects-container'>
                 {
                     projects.length !== 0 ? projects.map((proj, idx) => {
@@ -43,7 +44,7 @@ export default function ProjectList(props){
                             <Project project={proj} key={idx}/>
                         )
                     }) 
-                    : <h2 className="no-projs-header">No projects currently under "{filter}"! (Check back later)</h2>
+                    : <h2>No projects currently under the "{filter}" filter! <br/> (Check back later...)</h2>
                 }
 
             </div>

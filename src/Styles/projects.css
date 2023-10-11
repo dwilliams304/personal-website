@@ -1,0 +1,137 @@
+.project-page {
+    justify-content: center;
+    text-align: center;
+}
+
+.filters{
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 400px;
+}
+
+.filters fieldset {
+    border: 3px solid var(--secondaryColor);
+    border-radius: 10px;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters fieldset legend {
+    background-color: var(--mainColor);
+    border-top: 3px solid var(--secondaryColor);
+    border-radius: 10px;
+    color: var(--secondaryColor);
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.filters fieldset label {
+    color: var(--secondaryColor);
+    margin: 0rem 0.5rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--mainColor);
+    margin: 2rem 5rem;
+    border: 3px solid var(--secondaryColor);
+    border-radius: 25px;
+    min-width: 350px;
+    color: var(--secondaryColor)
+}
+
+.project-card {
+    margin: 2rem 2rem;
+    border: 3px solid var(--secondaryColor);
+    padding: 2rem;
+    min-width: 200px;
+    height: 175px;
+    color: var(--secondaryColor);
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+        transition: 0.2s ease;
+        scale: 1.1;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+}
+.projDet {
+    z-index: 1;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.projDet,
+.languages {
+    color: var(--secondaryColor);
+    background-color: var(--mainColor);
+    text-overflow: ellipsis;
+    transform: translateY(-20%);
+    border: 1px solid var(--secondaryColor);
+    border-style: inset;
+}
+
+.languages {
+    position: relative;
+    margin: 0rem 5rem;
+}
+
+.project-card div img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .projDet p,
+    .languages {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .projDet {
+        font-size: 20px;
+        position: relative;
+        transform: translateY(50%);
+        height: 80%;
+    }
+    .project-name{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        transform: translateY(50%);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .projDet p,
+    .languages {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .projDet {
+        font-size: 20px;
+        height: 80%;
+    }
+    .project-name{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        transform: translateY(50%);
+    }
+}

@@ -12,21 +12,17 @@ export default function Project(props){
     }
     return(
         <div onClick={() => toPage(project.projID)} 
-        className={`project-card`}
-        style={{backgroundImage:`url(${project.img})`}}>
+        className={`project-card`}>
             <div>
-                <h2 className='project-name projDet'>{project.projName}</h2>
-                <p className='project-description projDet'>{project.projDescription}</p>
-                {/* <img className='project-img' src={`${project.img}`} /> */}
+                <div className="projDet">
+                    <h2 className='project-name'>{project.projName}</h2>
+                    <p className='project-description'>{project.projDescription}</p>
+                </div>
+                <img className='project-img' src={`${project.img}`} alt='project thumbnail'/>
             </div>
 
             <div className='languages'>
-                {/* {
-                    project.categories.language.map(lang => {
-                        return (<h2>{lang}//&nbsp;</h2>) //eslint-disable-line
-                    })
-                } */}
-                {project.categories.language}
+                <p>Language: {project.categories.language}</p>
             </div>
 
         </div>
