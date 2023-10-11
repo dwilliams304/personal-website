@@ -102,15 +102,17 @@ footer{
   background-color: var(--mainColor);
   border-top: 3px solid var(--secondaryColor);
   color: var(--textColor);
-  height: 75px;
+  height: 100px;
   width: 100%;
   position: relative;
   bottom: 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer .social-icn {
-  margin: 0.5rem 2rem;
+  margin: 1.5rem;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -120,6 +122,7 @@ footer .social-icn {
 
   &:hover{
     transition: 0.2s;
+    scale: 1.1;
     color: var(--secondaryColor);
   }
 }

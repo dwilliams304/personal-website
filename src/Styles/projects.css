@@ -45,6 +45,7 @@
     border: 3px solid var(--secondaryColor);
     border-radius: 25px;
     min-width: 350px;
+    min-height: 47.2vh;
     color: var(--secondaryColor)
 }
 
@@ -123,12 +124,13 @@
 
     .projDet {
         font-size: 20px;
-        height: 80%;
     }
-    .project-name{
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        transform: translateY(50%);
+    .project-card{
+        margin: 15px;
+
+        &:hover{
+            scale: 1;
+            border-radius: 0;
+        }
     }
 }
