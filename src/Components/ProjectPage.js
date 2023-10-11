@@ -34,15 +34,24 @@ function ProjectPage(){
                 <h5>Language(s) used: {project.categories.language} </h5>
                 <h5>Project type: {project.categories.type}</h5>
             </div>
+
             <div className="project-page-extlinks">
                 {
-                    pageData.githubLink ?  
+                    githubLink ?  
                         <button> <FaGithub /> </button> :
                         <p>The Github repository is private, sorry!</p>
                 }
                 <button>
                     <FaExternalLinkAlt />
                 </button>
+            </div>
+
+            <div className="project-page-details">
+                <p>
+                    {fullDescription.split("\n").map((paragraph, i) => {
+                        return <p key={i}>{paragraph}</p>
+                    })}
+                </p>
             </div>
         </div>
     )
