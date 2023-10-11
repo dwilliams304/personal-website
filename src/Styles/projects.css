@@ -95,9 +95,61 @@
     top: 0;
 }
 
+.project-page-header-container {
+    display: flex;
+}
 
-.project-page-header img {
-    max-width: 500px;
+.project-page-banner {
+    min-width: 450px;
+    max-width: 35%;
+    border: 3px solid var(--secondaryColor);
+    margin: 1rem;
+}
+
+.project-page-header{
+    display: block;
+    justify-content: right;
+    text-align: left;
+    min-width: 40%;
+    max-width: 50%;
+    margin: 1rem 2rem;
+}
+
+
+.project-page-header h2 {
+    font-size: 40px;
+    width: 300px;
+    border-bottom: 2px solid var(--mainColor);
+}
+
+.project-page-extlinks {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+}
+.project-page-extlinks button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: var(--mainColor);
+
+    &:hover{
+        transition: 0.1s ease;
+        cursor: pointer;
+        color: var(--secondaryColor);
+        scale: 1.1;
+    }
+
+}
+
+.project-page-details{
+    margin: 1rem;
+    text-indent: 50px;
+}
+.project-page-details p {
+    font-size: 20px;
 }
 
 
@@ -122,6 +174,52 @@
         justify-content: center;
         transform: translateY(50%);
     }
+
+    .project-page-header-container {
+        display: block;
+    }
+
+    .project-page-header{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        width: 480px;
+        border-bottom: 2px solid var(--mainColor);
+    }
+    .project-page-header h2 {
+        font-size: 40px;
+        width: 100%;
+        border-bottom: 2px solid var(--mainColor);
+    }
+
+    .project-page-extlinks {
+        display: flex;
+        position: inherit;
+        justify-content: left;
+        right: 1rem;
+    }
+
+    .project-page-extlinks button,
+    .no-link{
+        border: none;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        font-size: 1.2rem;
+        color: var(--mainColor);
+        margin: 1rem;
+    }
+
+    .no-link{
+        width: 150px;
+        height: 50px;
+    }
+
+    .project-page-details{
+        margin: 0;
+        text-indent: 15px;
+    }
+    
 }
 
 
