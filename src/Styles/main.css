@@ -33,6 +33,14 @@ header{
   z-index: 2;
 }
 
+
+header h3:hover{
+  transition: 0.1s ease-in-out;
+  scale: 1.05;
+  cursor: pointer;
+  animation: site-title-hover 1000ms infinite;
+}
+
 header nav{
   margin-left: auto;
   z-index: 2;
@@ -132,4 +140,13 @@ footer .social-icn {
     scale: 1.1;
     color: var(--secondaryColor);
   }
+}
+
+
+@keyframes site-title-hover{
+  0%{ transform: scale(1); }
+  25%{ transform: scale(1.1); }
+  50%{ transform: scale(1); }
+  75%{ transform: scale(1.1); }
+  100%{ transform: scale(1); }
 }

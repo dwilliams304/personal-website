@@ -97,7 +97,7 @@ export const headers = [
     "pamelabeasley",
     "dwighschrute",
     "tommyshelby",
-    "alfisolomons",
+    "alfiesolomons",
     "rayvelcoro",
     "waynehays",
     "rustcohle",

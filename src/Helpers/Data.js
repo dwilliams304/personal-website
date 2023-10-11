@@ -11,11 +11,12 @@ const Data =
     },
     extLink: 'https://contradictivegames.itch.io/neon-rain',
     pageData : {
-      bannerImg: '',
-      dateReleased: '',
+      bannerImg: 'https://img.itch.zone/aW1nLzEyNjc3NTE3LnBuZw==/original/AlqdI6.png',
+      dateReleased: '02/02/2023',
       websiteLink: '',
       githubLink: '',
-      fullDescription: ''
+      fullDescription: '',
+      imgs: ['', '', '',]
     }
   },
   {
@@ -30,10 +31,11 @@ const Data =
     extLink: 'https://github.com/dwilliams304/personal-website',
     pageData: {
       bannerImg: '',
-      dateReleased: '',
+      dateReleased: '02/02/2023',
       websiteLink: '',
       githubLink: '',
-      fullDescription: ''
+      fullDescription: '',
+      imgs: ['', '', '',]
     }
   },
 ]

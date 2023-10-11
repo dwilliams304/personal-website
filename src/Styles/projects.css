@@ -95,6 +95,13 @@
     top: 0;
 }
 
+
+.project-page-header img {
+    max-width: 500px;
+}
+
+
+/* Tablet and smaller responsiveness */
 @media only screen and (max-width: 1024px) {
     .projDet p,
     .languages {
@@ -117,6 +124,8 @@
     }
 }
 
+
+/* Mobile responsiveness */
 @media only screen and (max-width: 680px) {
     .projects-container{
         margin: 2rem 0;
