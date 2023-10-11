@@ -22,7 +22,7 @@ export default function NavBar(props){
             <nav ref={navRef}>
                 <a href='/'>Home</a>
                 <a href='/projects'>Projects</a>
-                <a href='/contact'>Contact</a>
+                {/* <a href='/contact'>Contact</a> */}
                 <button className='nav-btn nav-close-btn' onClick={showNav}>
                     <FaTimes />
                 </button>

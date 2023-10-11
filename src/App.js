@@ -26,7 +26,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='projects' element={<ProjectList projects={projectsData} />} />
-          <Route path='contact' element={<Contact />} />
+          {/* <Route path='contact' element={<Contact />} /> */}
           <Route path='projects/:id' element={<ProjectPage openInNewWindow={openInNewWindow} /> } />
         </Routes>
       <Footer openInNewWindow={openInNewWindow} socialLinks={socialLinks}/>
