@@ -174,15 +174,20 @@
         transform: translateY(50%);
     }
 
+    /* Project Specific Page stuff */
+
     .project-page-header-container{
         margin: 0;
         padding: 0;
-        width: 100%;
+        min-width: 100%;
         display: block;
     }
 
     .project-page-banner{
-        width: 100%;
+        min-width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
     }
 
     
@@ -191,7 +196,7 @@
         text-align: left;
         margin: 0;
         padding: 0;
-        width: 480px;
+        min-width: 100%;
         border-bottom: 2px solid var(--mainColor);
     }
     .project-page-header h2 {
