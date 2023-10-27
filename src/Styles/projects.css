@@ -175,11 +175,20 @@
         transform: translateY(50%);
     }
 
-    .project-page-header-container {
+    .project-page-header-container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
         display: block;
     }
 
+    .project-page-banner{
+        width: 100%;
+    }
+
+    
     .project-page-header{
+        display: block;
         text-align: left;
         margin: 0;
         padding: 0;
@@ -228,16 +237,17 @@
     .projects-container{
         margin: 2rem 0;
     }
-
+    
     .projDet {
         font-size: 15px;
     }
     .project-card{
         margin: 15px;
-
+        
         &:hover{
             scale: 1;
             border-radius: 0;
         }
     }
+
 }
