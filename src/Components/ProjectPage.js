@@ -10,7 +10,7 @@ function ProjectPage(props){
     const [pageData, setPageData] = useState({});
 
     //Destructure from page's data
-    const {bannerImg, dateReleased, websiteLink, githubLink, fullDescription} = pageData;
+    const {bannerImg, dateStarted, status, websiteLink, githubLink, fullDescription} = pageData;
     const { openInNewWindow } = props;
     
 
@@ -36,7 +36,8 @@ function ProjectPage(props){
                 <div className="project-page-header">
                     <h2>{project.projName}</h2>
                     <h3>{project.projDescription}</h3>
-                    <h4>Created on: {dateReleased}</h4>
+                    <h4>Started on: {dateStarted}</h4>
+                    <h4>Project status: {status}</h4>
                     <h5>Language(s) used: {project.categories.language} </h5>
                     <h5>Project type: {project.categories.type}</h5>
                 </div>

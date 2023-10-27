@@ -12,7 +12,8 @@ const Data =
     },
     pageData : {
       bannerImg: 'https://img.itch.zone/aW1nLzEyNjc3NTE3LnBuZw==/original/AlqdI6.png',
-      dateReleased: '12/31/2999',
+      dateStarted: '06/15/2023',
+      status: 'Ongoing',
       websiteLink: 'https://contradictivegames.itch.io/neon-rain',
       githubLink: '',
       // descriptions will be split by react at every \n - backslashes otherwise are for easier viewing
@@ -59,7 +60,8 @@ const Data =
     },
     pageData: {
       bannerImg: 'https://raw.githubusercontent.com/dwilliams304/personal-website/main/public/assets/imgs/Projectcard/portfoliowebsiteprojectcard.PNG',
-      dateReleased: '12/31/2999',
+      dateStarted: '08/11/2023',
+      status: 'Ongoing',
       websiteLink: 'https://daviswilliams-portfolio.vercel.app',
       githubLink: 'https://github.com/dwilliams304/personal-website',
       fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \
