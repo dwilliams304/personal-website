@@ -100,7 +100,6 @@
 }
 
 .project-page-banner {
-    min-width: 450px;
     max-width: 35%;
     border: 3px solid var(--secondaryColor);
     margin: 1rem;
