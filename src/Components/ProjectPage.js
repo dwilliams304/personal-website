@@ -32,7 +32,7 @@ function ProjectPage(props){
     return(
         <div className="project-page-container">
             <div className="project-page-header-container">
-                <img className="project-page-banner" src={bannerImg ? bannerImg : 'https://www.ncenet.com/wp-content/uploads/2020/04/No-image-found.jpg'} alt='banner'/>
+                <img className="project-page-banner" src={require(`${bannerImg}`)} alt='banner'/>
                 <div className="project-page-header">
                     <h2>{project.projName}</h2>
                     <h3>{project.projDescription}</h3>
