@@ -5,13 +5,13 @@ const Data =
     projID: 0,
     projName: 'Neon Rain',
     projDescription: 'A 2D top-down shooter game made within Unity.',
-    img: 'https://img.itch.zone/aW1nLzEyNjc3NTE3LnBuZw==/original/AlqdI6.png',
+    img: 'NeonRain.PNG',
     categories: {
       language: 'c#',
       type: 'game'
     },
     pageData : {
-      bannerImg: 'https://img.itch.zone/aW1nLzEyNjc3NTE3LnBuZw==/original/AlqdI6.png',
+      bannerImg: 'NeonRain.PNG',
       dateStarted: '06/15/2023',
       status: 'Ongoing',
       websiteLink: 'https://contradictivegames.itch.io/neon-rain',
@@ -53,13 +53,13 @@ const Data =
     projID: 1,
     projName: 'Portfolio Website',
     projDescription: 'A React website built to showoff all of my projects.',
-    img: './assets/imgs/Projectcard/portfoliowebsiteprojectcard.PNG',
+    img: 'PortfolioWebsite.PNG',
     categories: {
       language: 'js',
       type: 'website'
     },
     pageData: {
-      bannerImg: './assets/imgs/Projectcard/portfoliowebsiteprojectcard.PNG',
+      bannerImg: 'PortfolioWebsite.PNG',
       dateStarted: '08/11/2023',
       status: 'Ongoing',
       websiteLink: 'https://daviswilliams-portfolio.vercel.app',
@@ -100,13 +100,13 @@ const Data =
     projID: 2,
     projName: 'Weather App',
     projDescription: 'A React website that can tell you the weather/conditions of any city',
-    img: 'https://github.com/dwilliams304/personal-website/blob/main/public/assets/imgs/Projectcard/weatherappbanner.PNG',
+    img: 'WeatherApp.PNG',
     categories: {
       language: 'js',
       type: 'website'
     },
     pageData: {
-      bannerImg: 'https://github.com/dwilliams304/personal-website/blob/main/public/assets/imgs/Projectcard/weatherappbanner.PNG',
+      bannerImg: 'WeatherApp.PNG',
       dateStarted: '10/28/2023',
       status: 'Completed',
       websiteLink: '',

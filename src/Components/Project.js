@@ -18,7 +18,7 @@ export default function Project(props){
                     <h2 className='project-name'>{project.projName}</h2>
                     <p className='project-description'>{project.projDescription}</p>
                 </div>
-                <img className='project-img' src={`${project.img}`} alt='project thumbnail'/>
+                <img className='project-img' src={`/assets/imgs/projects/${project.img}`} alt='project thumbnail'/>
             </div>
 
             <div className='languages'>
