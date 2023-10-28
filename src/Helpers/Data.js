@@ -53,13 +53,13 @@ const Data =
     projID: 1,
     projName: 'Portfolio Website',
     projDescription: 'A React website built to showoff all of my projects.',
-    img: 'https://raw.githubusercontent.com/dwilliams304/personal-website/main/public/assets/imgs/Projectcard/portfoliowebsiteprojectcard.PNG',
+    img: 'assets/imgs/Projectcard/portfoliowebsiteprojectcard.PNG',
     categories: {
       language: 'js',
       type: 'website'
     },
     pageData: {
-      bannerImg: 'https://raw.githubusercontent.com/dwilliams304/personal-website/main/public/assets/imgs/Projectcard/portfoliowebsiteprojectcard.PNG',
+      bannerImg: 'assets/imgs/Projectcard/portfoliowebsiteprojectcard.PNG',
       dateStarted: '08/11/2023',
       status: 'Ongoing',
       websiteLink: 'https://daviswilliams-portfolio.vercel.app',
