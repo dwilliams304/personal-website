@@ -53,7 +53,8 @@
     margin: 2rem 2rem;
     border: 3px solid var(--secondaryColor);
     padding: 2rem;
-    min-width: 200px;
+    min-width: 300px;
+    width: 25%;
     height: 175px;
     color: var(--secondaryColor);
     position: relative;
@@ -172,6 +173,10 @@
         display: flex;
         justify-content: center;
         transform: translateY(50%);
+    }
+
+    .project-card {
+        width: 50%;
     }
 
     /* Project Specific Page stuff */

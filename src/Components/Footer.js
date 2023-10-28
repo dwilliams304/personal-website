@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { iconMap } from "../Helpers/iconmap";
 
 
 function Footer(props){
@@ -8,10 +8,10 @@ function Footer(props){
     return(
         <footer>
             <button className="social-icn" onClick={() => openInNewWindow(github)}>
-                <FaGithub />
+                { iconMap["github"] }
             </button>
             <button className="social-icn" onClick={() => openInNewWindow(linkedin)}>
-                <FaLinkedin />
+                { iconMap["linkedin"] }
             </button>
         </footer>
     )

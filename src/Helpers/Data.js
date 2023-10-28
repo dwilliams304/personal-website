@@ -14,8 +14,9 @@ const Data =
       bannerImg: 'NeonRain.PNG',
       dateStarted: '06/15/2023',
       status: 'Ongoing',
+      techUsed: ['c#', 'unity', ],
       websiteLink: 'https://contradictivegames.itch.io/neon-rain',
-      githubLink: '',
+      githubLink: 'https://github.com/dwilliams304/NeonRain',
       // descriptions will be split by react at every \n - backslashes otherwise are for easier viewing
       fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \
@@ -62,6 +63,7 @@ const Data =
       bannerImg: 'PortfolioWebsite.PNG',
       dateStarted: '08/11/2023',
       status: 'Ongoing',
+      techUsed: ['react', 'javascript'],
       websiteLink: 'https://daviswilliams-portfolio.vercel.app',
       githubLink: 'https://github.com/dwilliams304/personal-website',
       fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \
@@ -109,6 +111,7 @@ const Data =
       bannerImg: 'WeatherApp.PNG',
       dateStarted: '10/28/2023',
       status: 'Completed',
+      techUsed: [''],
       websiteLink: '',
       githubLink: 'https://github.com/dwilliams304/weather-app',
       fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \
