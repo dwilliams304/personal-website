@@ -100,13 +100,13 @@ const Data =
     projID: 2,
     projName: 'Weather App',
     projDescription: 'A React website that can tell you the weather/conditions of any city',
-    img: 'https://raw.githubusercontent.com/dwilliams304/personal-website/main/public/assets/imgs/Projectcard/portfoliowebsiteprojectcard.PNG',
+    img: 'https://github.com/dwilliams304/personal-website/blob/main/public/assets/imgs/Projectcard/weatherappbanner.PNG',
     categories: {
       language: 'js',
       type: 'website'
     },
     pageData: {
-      bannerImg: 'https://raw.githubusercontent.com/dwilliams304/personal-website/main/public/assets/imgs/Projectcard/portfoliowebsiteprojectcard.PNG',
+      bannerImg: 'https://github.com/dwilliams304/personal-website/blob/main/public/assets/imgs/Projectcard/weatherappbanner.PNG',
       dateStarted: '10/28/2023',
       status: 'Completed',
       websiteLink: '',
