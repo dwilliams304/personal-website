@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Data from "../Helpers/Data";
 import { useParams } from "react-router";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"; 
+import { iconMap } from '../Helpers/iconmap';
 
 
 function ProjectPage(props){
@@ -10,7 +11,7 @@ function ProjectPage(props){
     const [pageData, setPageData] = useState({});
 
     //Destructure from page's data
-    const {bannerImg, dateStarted, status, websiteLink, githubLink, fullDescription} = pageData;
+    const {bannerImg, techUsed, dateStarted, status, websiteLink, githubLink, fullDescription} = pageData;
     const { openInNewWindow } = props;
     
 
@@ -35,6 +36,11 @@ function ProjectPage(props){
                 <img className="project-page-banner" src={`/assets/imgs/projects/${bannerImg}`} alt='banner'/>
                 <div className="project-page-header">
                     <h2>{project.projName}</h2>
+                    <h3>Tech used: {
+                        techUsed.map((tech, i) => {
+                            return <span className="tech-icon" key={i}>{iconMap[tech]}</span>
+                        })
+                    }</h3>
                     <h3>{project.projDescription}</h3>
                     <h4>Started on: {dateStarted}</h4>
                     <h4>Project status: {status}</h4>
@@ -61,11 +67,11 @@ function ProjectPage(props){
 
                 {/* at ever '\n' -> split into a new <p> */}
             <div className="project-page-details">
-                <p>{
+                {
                         fullDescription.split("\n").map((paragraph, i) => {
                             return <p key={i}>{paragraph}</p>
                         })
-                }</p>
+                }
             </div>
         </div>
     )

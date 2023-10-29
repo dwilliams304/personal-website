@@ -5,13 +5,13 @@ const Data =
     projID: 0,
     projName: 'Neon Rain',
     projDescription: 'A 2D top-down shooter game made within Unity.',
-    img: 'NeonRain.PNG',
+    img: 'NeonRainGameplay.PNG',
     categories: {
       language: 'c#',
       type: 'game'
     },
     pageData : {
-      bannerImg: 'NeonRain.PNG',
+      bannerImg: 'NeonRainGameplay.PNG',
       dateStarted: '06/15/2023',
       status: 'Ongoing',
       techUsed: ['c#', 'unity', ],
@@ -63,7 +63,7 @@ const Data =
       bannerImg: 'PortfolioWebsite.PNG',
       dateStarted: '08/11/2023',
       status: 'Ongoing',
-      techUsed: ['react', 'javascript'],
+      techUsed: ['react', 'javascript', 'node'],
       websiteLink: 'https://daviswilliams-portfolio.vercel.app',
       githubLink: 'https://github.com/dwilliams304/personal-website',
       fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \
@@ -111,7 +111,7 @@ const Data =
       bannerImg: 'WeatherApp.PNG',
       dateStarted: '10/28/2023',
       status: 'Completed',
-      techUsed: [''],
+      techUsed: ['react', 'javascript', 'node'],
       websiteLink: '',
       githubLink: 'https://github.com/dwilliams304/weather-app',
       fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \

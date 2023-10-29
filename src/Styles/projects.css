@@ -152,6 +152,12 @@
     font-size: 20px;
 }
 
+.tech-icon{
+    height: 40px;
+    width: 40px;
+}
+
+
 
 /* Tablet and smaller responsiveness */
 @media only screen and (max-width: 1024px) {
