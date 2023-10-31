@@ -112,7 +112,7 @@ const Data =
       dateStarted: '10/28/2023',
       status: 'Completed',
       techUsed: ['react', 'javascript', 'node'],
-      websiteLink: '',
+      websiteLink: 'https://dw-project-weather-app.vercel.app/',
       githubLink: 'https://github.com/dwilliams304/weather-app',
       fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Data from "../Helpers/Data";
+import Data from "../../helpers/Data";
 import { useParams } from "react-router";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"; 
-import { iconMap } from '../Helpers/iconmap';
+import { iconMap } from '../../../helpers/iconmap';
 
 
 function ProjectPage(props){

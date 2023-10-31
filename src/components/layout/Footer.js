@@ -1,5 +1,5 @@
 import React from "react";
-import { iconMap } from "../Helpers/iconmap";
+import { iconMap } from "../../Helpers/iconmap";
 
 
 function Footer(props){

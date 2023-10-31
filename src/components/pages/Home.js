@@ -15,11 +15,10 @@ export default function Home(){
                 <div className="introduction about-me">
                     <h2>My name is Davis.</h2>
                     <p>Welcome to my portfolio.</p>
-                    <p>I am an aspiring Fullstack Web Developer with a strong foundation in customer
-                    service and a passion for creating user-centric web applications. Proficient in
-                    JavaScript and ReactJS, actively developing skills through self-study and
-                    ongoing learning.</p>
-
+                    <p>HI, I'm Davis, a Fullstack Web Developer with a strong foundation in customer 
+                        service and a passion for creating user-centric web applications. Currently, I am 
+                        proficient in using JavaScript, ReactJS, and C#. 
+                    </p>
                     <p>This website is designed to show off all projects I've worked on and is also to
                         help showcase some of my skills with designing, programming,  and anything else
                         related to web development!

@@ -1,6 +1,6 @@
 import React, {useRef, useState} from "react";
 import { FaBars, FaTimes } from 'react-icons/fa'; 
-import { headers } from '../Helpers/RandomHeaders';
+import { headers } from '../../data/RandomHeaders';
 
 
 export default function NavBar(props){
