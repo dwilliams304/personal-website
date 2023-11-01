@@ -1,10 +1,10 @@
 /* eslint-disable */
-import NavBar from './Components/Nav';
-import Footer from './Components/Footer';
-import Home from './Components/Home';
-import ProjectList from './Components/ProjectList';
-import ProjectPage from './Components/ProjectPage';
-import projectsData from './Helpers/Data';
+import NavBar from './components/layout/Nav';
+import Footer from './components/layout/Footer';
+import Home from './components/pages/Home';
+import ProjectList from './components/pages/projects/ProjectList';
+import ProjectPage from './components/pages/projects/ProjectPage';
+import ProjectData from './data/ProjectData';
 import {Routes, Route} from 'react-router-dom'
 
 const socialLinks = {
@@ -24,7 +24,7 @@ function App() {
       <NavBar openLink={openInNewWindow}/>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='projects' element={<ProjectList projects={projectsData} />} />
+          <Route path='projects' element={<ProjectList projects={ProjectData} />} />
           <Route path='projects/:id' element={<ProjectPage openInNewWindow={openInNewWindow} /> } />
         </Routes>
       <Footer openInNewWindow={openInNewWindow} socialLinks={socialLinks}/>

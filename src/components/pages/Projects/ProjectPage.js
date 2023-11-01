@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Data from "../../helpers/Data";
+import ProjectData from "../../../data/ProjectData";
 import { useParams } from "react-router";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"; 
-import { iconMap } from '../../../helpers/iconmap';
+import { iconMap } from '../../../data/iconmap';
 
 
 function ProjectPage(props){
@@ -16,10 +16,10 @@ function ProjectPage(props){
     
 
     useEffect(() => {
-        for(let i = 0; i < Data.length; i++){
-            const current = Data[i];
+        for(let i = 0; i < ProjectData.length; i++){
+            const current = ProjectData[i];
             //Set data to be the id of the project that matches id in the url
-            if(Data[i].projID === parseInt(id)) {
+            if(ProjectData[i].projID === parseInt(id)) {
                 setProject(current);
                 //Set the page's data so it's a bit easier rather than doing:
                 //project.pageData.x
