@@ -65,7 +65,7 @@ function ProjectPage(props){
                 </div>
             </div>
 
-                {/* at ever '\n' -> split into a new <p> */}
+                {/* at every '\n' -> split into a new <p> */}
             <div className="project-page-details">
                 {
                         fullDescription.split("\n").map((paragraph, i) => {

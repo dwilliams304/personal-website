@@ -15,13 +15,17 @@ export default function Home(){
                 <div className="introduction about-me">
                     <h2>My name is Davis.</h2>
                     <p>Welcome to my portfolio.</p>
-                    <p>HI, I'm Davis, a Fullstack Web Developer with a strong foundation in customer 
+                    <p>I'm a Fullstack Web Developer with a strong foundation in customer 
                         service and a passion for creating user-centric web applications. Currently, I am 
                         proficient in using JavaScript, ReactJS, and C#. 
                     </p>
                     <p>This website is designed to show off all projects I've worked on and is also to
                         help showcase some of my skills with designing, programming,  and anything else
                         related to web development!
+                    </p>
+                    <p> I absolutely love designing and developing things that people can interact with like websites,
+                        games, software, anything of the like. If you ever want to collaborate, work with me, or just
+                        in general contact me for any reason, feel free to fill out the contact form - I'd love to chat!
                     </p>
                 </div>
                 <div className="skills about-me">
