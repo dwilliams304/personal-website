@@ -2,8 +2,8 @@
 import NavBar from './components/layout/Nav';
 import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
-import ProjectList from './components/pages/projects/ProjectList';
-import ProjectPage from './components/pages/projects/ProjectPage';
+import ProjectList from './components/pages/project/ProjectList';
+import ProjectPage from './components/pages/project/ProjectPage';
 import ProjectData from './data/ProjectData';
 import {Routes, Route} from 'react-router-dom'
 
