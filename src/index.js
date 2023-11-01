@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/main.css';
-import './styles/home.css';
-import './styles/projects.css';
+import './styles/main/main.css';
+import './styles/main/home.css';
+import './styles/pages/projects.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
