@@ -1,11 +1,9 @@
-import { FaJs, FaJava, FaReact, FaDatabase, FaPython, FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 export const iconMap = {
-    "javascript": <FaJs />,
-    "react": <FaReact />,
-    "java": <FaJava />,
+    "javascript": <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>,
+    "react": <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>,
     "c#": <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>,
-    "python": <FaPython />,
-    "database": <FaDatabase />,
+    "python": <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>,
     "unity":  <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/>,
     "unrealengine": 
         <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" 
