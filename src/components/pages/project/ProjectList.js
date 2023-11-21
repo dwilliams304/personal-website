@@ -5,6 +5,8 @@ export default function ProjectList(props){
     const initialData = props.projects;
     const [projects, setProjects] = useState(initialData);
     const [filter, setFilter] = useState('');
+
+    const { projectTypes } = props;
     
     useEffect(() => {
         if(filter){
@@ -32,9 +34,18 @@ export default function ProjectList(props){
                 <fieldset>
                     <legend>Project Type</legend>
                     <label><input type="radio" name="filter" value="all" onChange={clearFilters}/>&nbsp;All</label>
-                    <label><input type="radio" name="filter" value="website" onChange={switchFilter}/>&nbsp;Website</label>
-                    {/* <label><input type="radio" name="filter" value="app" onChange={switchFilter}/>&nbsp;App</label> */}
-                    <label><input type="radio" name="filter" value="game" onChange={switchFilter}/>&nbsp;Game</label>
+                    {projectTypes.map((p, i) => {
+                        return (
+                            <label key={i}>
+                                <input type='radio'
+                                name='filter'
+                                value={p}
+                                onChange={switchFilter}
+                                />
+                            &nbsp;{p}
+                            </label>
+                        )
+                    })}
                 </fieldset>
             </div>
             <div className='projects-container'>

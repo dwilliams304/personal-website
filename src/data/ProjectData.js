@@ -8,7 +8,7 @@ const Data =
     img: 'NeonRainGameplay.PNG',
     categories: {
       language: 'c#',
-      type: 'game'
+      type: 'Game'
     },
     pageData : {
       bannerImg: 'NeonRainGameplay.PNG',
@@ -41,7 +41,7 @@ const Data =
     img: 'PortfolioWebsite.PNG',
     categories: {
       language: 'js',
-      type: 'website'
+      type: 'Website'
     },
     pageData: {
       bannerImg: 'PortfolioWebsite.PNG',
@@ -64,7 +64,7 @@ const Data =
     img: 'WeatherApp.PNG',
     categories: {
       language: 'js',
-      type: 'website'
+      type: 'Website'
     },
     pageData: {
       bannerImg: 'WeatherApp.PNG',

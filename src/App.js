@@ -18,13 +18,14 @@ function App() {
     window.open(link);
   }
 
+  const projectTypes = ['Website', 'Game'];
 
   return (
     <>
       <NavBar openLink={openInNewWindow}/>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='projects' element={<ProjectList projects={ProjectData} />} />
+          <Route path='projects' element={<ProjectList projects={ProjectData} projectTypes={projectTypes} />} />
           <Route path='projects/:id' element={<ProjectPage openInNewWindow={openInNewWindow} /> } />
         </Routes>
       <Footer openInNewWindow={openInNewWindow} socialLinks={socialLinks}/>
