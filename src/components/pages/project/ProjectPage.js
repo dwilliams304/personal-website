@@ -33,7 +33,8 @@ function ProjectPage(props){
     return(
         <div className="project-page-container">
             <div className="project-page-header-container">
-                <img className="project-page-banner" src={`/assets/imgs/projects/${bannerImg}`} alt='banner'/>
+                <img className="project-page-banner" src={`/assets/imgs/projects/${bannerImg}`} alt='banner'
+                onClick={() => openInNewWindow(`${websiteLink}`)}/>
                 <div className="project-page-header">
                     <h2>{project.projName}</h2>
                     <h3>Tech used: {

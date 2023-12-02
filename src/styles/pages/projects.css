@@ -104,6 +104,9 @@
     max-width: 35%;
     border: 3px solid var(--secondaryColor);
     margin: 1rem;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .project-page-header{
