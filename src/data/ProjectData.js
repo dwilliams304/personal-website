@@ -82,7 +82,7 @@ const Data =
   {
     projID: 3,
     projName: 'HRF: Asylum Reports Generator',
-    projDescription: 'The Asylum Office Grant Rate Tracker provides asylum seekers, researchers, policymakers, and the public an interactive tool to explore USCIS data on Asylum Office decisions',
+    projDescription: 'An interactive tool to explore USCIS data on Asylum Office decisions',
     img: 'https://bwsrltsxndfbxnthgmlt.supabase.co/storage/v1/object/sign/Personal%20Projects/HRF_Banner.PNG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQZXJzb25hbCBQcm9qZWN0cy9IUkZfQmFubmVyLlBORyIsImlhdCI6MTcwMTgzMTc0MiwiZXhwIjoxNzMzMzY3NzQyfQ.Sz-wUbcTyo9ODLXOwE1V75Ss2xtCmRznWprXAIUiN8Q&t=2023-12-06T03%3A02%3A15.926Z',
     categories: {
       language: 'JavaScript',

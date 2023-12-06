@@ -27,7 +27,8 @@
     font-size: 18px;
 }
 
-.filters fieldset label {
+.filters fieldset label,
+.filters fieldset input {
     color: var(--secondaryColor);
     margin: 0rem 0.5rem;
 
