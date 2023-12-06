@@ -29,7 +29,7 @@ function ProjectPage(props){
         <div className="project-page-container">
             <div className="project-page-header-container">
                 <img className="project-page-banner" src={projectData.project_img} alt='banner'
-                onClick={() => openInNewWindow(projectData.link[0] ? projectData.link[0] : projectData.link[1])}/>
+                onClick={() => openInNewWindow(projectData.links[0] ? projectData.links[0] : projectData.links[1])}/>
                 <div className="project-page-header">
                     <h2>{projectData.project_name}</h2>
                     <h3>Tech used: {
