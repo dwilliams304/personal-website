@@ -46,16 +46,15 @@ header nav{
   z-index: 2;
 }
 
-nav a,
-nav span{
+.nav-link{
   margin: 0 2rem;
   color: var(--textColor);
   text-decoration: none;
   font-size: 20px;
-  &:hover{
-    cursor: pointer;
-    color: var(--secondaryColor);
-  }
+}
+
+.nav-link:hover{
+  cursor: pointer;
 }
 
 
@@ -108,11 +107,13 @@ header .nav-btn{
     right: 2rem;
   }
 
-  nav a {
+  .nav-link {
     font-size: 1.5rem;
     border-bottom: 1px solid var(--secondaryColor);
     padding-bottom: .5rem;
   }
+
+  
 }
 
 

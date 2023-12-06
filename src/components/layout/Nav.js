@@ -22,9 +22,9 @@ export default function NavBar(props){
             <h3 onClick={changeText}>{headerText}.portfolio</h3>
             <nav ref={navRef}>
                 {/* <a href='/'>Home</a> */}
-                <Link to='/'>Home</Link>
-                <Link to='/projects'>Projects</Link>
-                <span onClick={() => props.openLink("https://forms.gle/fdhfSxEpDU7rsWFX8")}>Contact</span>
+                <Link className="nav-link" onClick={showNav} to='/'>Home</Link>
+                <Link className="nav-link" onClick={showNav} to='/projects'>Projects</Link>
+                <span className="nav-link" onClick={() => props.openLink("https://forms.gle/fdhfSxEpDU7rsWFX8")}>Contact</span>
                 <button className='nav-btn nav-close-btn' onClick={showNav}>
                     <FaTimes />
                 </button>
