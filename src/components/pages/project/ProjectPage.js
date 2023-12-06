@@ -10,13 +10,18 @@ function ProjectPage(props){
     
 
     //Destructure from page's data
-    const { getSpecificProject, openInNewWindow } = props;
+    const { openInNewWindow } = props;
     
 
+
     useEffect(() => {
-        getSpecificProject(parseInt(id))
-            .then(setProjectData)
-    }, [id, getSpecificProject])
+        for(let i = 0; i < props.projects.length; i++){
+            const cur = props.projects[i];
+            if(cur.project_id === parseInt(id)){
+                setProjectData(cur);
+            }
+        }        
+    }, [id, props.projects])
 
 
     if(!projectData) return <h2>Loading data...</h2>

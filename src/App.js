@@ -18,7 +18,9 @@ function App() {
   }
 
   useEffect(() => {
-    getProjectData();
+    if(projectsData.length === 0){
+      getProjectData();
+    }
   }, [])
 
   async function getProjectData(){
@@ -28,20 +30,6 @@ function App() {
         .select('*');
       
         if(data != null) setProjectsData(data);
-    }
-    catch(error){
-      alert(error.message);
-    }
-  }
-
-  async function getSpecificProject(id){
-    try{
-      const { data, error } = await supabase
-        .from('projects')
-        .select('*')
-        .eq('project_id', id)
-
-        if(data !== null) return data[0];
     }
     catch(error){
       alert(error.message);
@@ -60,8 +48,8 @@ function App() {
           } />
           <Route path='projects/:id' element={
             <ProjectPage 
-              openInNewWindow={openInNewWindow} 
-              getSpecificProject={getSpecificProject}
+              openInNewWindow={openInNewWindow}
+              projects={projectsData}
               /> } 
           />
         </Routes>
