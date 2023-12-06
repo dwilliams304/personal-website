@@ -1,5 +1,4 @@
 import React, {useRef, useState} from "react";
-import { useNavigate } from 'react-router';
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from 'react-icons/fa'; 
 import { headers } from '../../data/RandomHeaders';
@@ -7,7 +6,6 @@ import { headers } from '../../data/RandomHeaders';
 
 export default function NavBar(props){
     const navRef = useRef();
-    const nav = useNavigate();
     const [headerText, setHeaderText] = useState('daviswilliams');
     const showNav = () => {
         navRef.current.classList.toggle('responsive_nav');
