@@ -1,4 +1,5 @@
 /* eslint-disable */
+import React, {useState, useEffect} from 'react';
 import NavBar from './components/layout/Nav';
 import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
@@ -7,11 +8,34 @@ import ProjectPage from './components/pages/project/ProjectPage';
 import ProjectData from './data/ProjectData';
 import {Routes, Route} from 'react-router-dom';
 import { socialLinks, projectTypes } from './data';
+import { supabase } from './supabaseClient';
+
 
 function App() {
+  const [projectsData, setProjectsData] = useState([]);
 
   const openInNewWindow = (link) => {
     window.open(link);
+  }
+
+
+
+  useEffect(() => {
+    getProjectData();
+  }, [])
+
+  async function getProjectData(){
+    try{
+      const { data, error } = await supabase
+        .from('projects')
+        .select('*');
+      
+        if(data != null) setProjectsData(data);
+        console.log(data);
+    }
+    catch(error){
+      alert(error.message);
+    }
   }
 
   return (
@@ -21,7 +45,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='projects' element={
             <ProjectList 
-              projects={ProjectData} 
+              projects={projectsData} 
               projectTypes={projectTypes} />
           } />
           <Route path='projects/:id' element={<ProjectPage openInNewWindow={openInNewWindow} /> } />
