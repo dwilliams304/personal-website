@@ -18,8 +18,6 @@ function App() {
     window.open(link);
   }
 
-
-
   useEffect(() => {
     getProjectData();
   }, [])
@@ -31,7 +29,6 @@ function App() {
         .select('*');
       
         if(data != null) setProjectsData(data);
-        console.log(data);
     }
     catch(error){
       alert(error.message);
