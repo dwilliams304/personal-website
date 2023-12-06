@@ -34,6 +34,21 @@ function App() {
     }
   }
 
+  async function getSpecificData(id){
+    try{
+      const { data, error } = await supabase
+        .from('projects')
+        .select('*')
+        .eq('project_id', id)
+
+        console.log('Data: ', data[0]);
+        if(data !== null) return data[0];
+    }
+    catch(error){
+      alert(error.message);
+    }
+  }
+
   return (
     <>
       <NavBar openLink={openInNewWindow}/>
@@ -44,7 +59,12 @@ function App() {
               projects={projectsData} 
               projectTypes={projectTypes} />
           } />
-          <Route path='projects/:id' element={<ProjectPage openInNewWindow={openInNewWindow} /> } />
+          <Route path='projects/:id' element={
+            <ProjectPage 
+              openInNewWindow={openInNewWindow} 
+              getSpecificData={getSpecificData}
+              /> } 
+          />
         </Routes>
       <Footer openInNewWindow={openInNewWindow} socialLinks={socialLinks}/>
     </>
