@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Project from './Project'
+import Project from './Project';
 
 export default function ProjectList(props){
     const initialData = props.projects;
@@ -7,7 +7,11 @@ export default function ProjectList(props){
     const [filter, setFilter] = useState('');
 
     const { projectTypes } = props;
-    
+
+    useEffect(() => {
+        setProjects(initialData);
+    }, [initialData])
+
     useEffect(() => {
         if(filter){
             const projs = [];
@@ -50,7 +54,7 @@ export default function ProjectList(props){
             </div>
             <div className='projects-container'>
                 {
-                    projects.length !== 0 ? projects.map((proj, idx) => {
+                    projects.length ? projects.map((proj, idx) => {
                         return (
                             <Project project={proj} key={idx}/>
                         )
