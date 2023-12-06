@@ -8,10 +8,10 @@ function Footer(props){
     return(
         <footer>
             <button className="social-icn" onClick={() => openInNewWindow(github)}>
-                { iconMap["github"] }
+                { iconMap["GitHub"] }
             </button>
             <button className="social-icn" onClick={() => openInNewWindow(linkedin)}>
-                { iconMap["linkedin"] }
+                { iconMap["LinkedIn"] }
             </button>
         </footer>
     )

@@ -8,10 +8,10 @@
     border: 5px solid var(--mainColor);
     border-radius: 100%;
     animation: coin-hover 5000ms infinite;
+    transition: 0.2s ease;
 }
 
 .img-coin:hover{
-    transition: 0.2s ease;
     scale: 1.1;
     border-color: var(--secondaryColor);
     animation: coin-flip 2500ms infinite;
@@ -33,15 +33,15 @@
     padding: 1rem;
     margin: 25px;
 
-    &:hover{
-        transition: 0.5s ease;
-        scale: 1.1;
-        cursor: pointer;
-        font-weight: bold;
-        background-color: var(--secondaryColor);
-        color: var(--mainColor);
-        border: 3px solid var(--mainColor);
-    }
+    transition: all 0.2s ease-in-out;
+}
+.projects-btn:hover{
+    scale: 1.1;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--secondaryColor);
+    color: var(--mainColor);
+    border: 3px solid var(--mainColor);
 }
 
 .container {
