@@ -3,14 +3,10 @@ import Project from './Project';
 
 export default function ProjectList(props){
     const initialData = props.projects;
-    const [projects, setProjects] = useState(initialData);
+    const [projects, setProjects] = useState(props.projects);
     const [filter, setFilter] = useState('');
 
     const { projectTypes } = props;
-
-    useEffect(() => {
-        setProjects(initialData);
-    }, [initialData])
 
     useEffect(() => {
         if(filter){
@@ -54,12 +50,18 @@ export default function ProjectList(props){
             </div>
             <div className='projects-container'>
                 {
-                    projects.length ? projects.map((proj, idx) => {
+                    projects.length === 0 ? 
+                    initialData.map((proj, idx) => {
+                        return(
+                            <Project project={proj} key={idx} />
+                        )
+                    })
+                    : 
+                    projects.map((proj, idx) => {
                         return (
                             <Project project={proj} key={idx}/>
                         )
                     }) 
-                    : <h2>No projects currently under the "{filter}" filter! <br/> (Check back later...)</h2>
                 }
 
             </div>
