@@ -34,7 +34,7 @@ function App() {
     }
   }
 
-  async function getSpecificData(id){
+  async function getSpecificProject(id){
     try{
       const { data, error } = await supabase
         .from('projects')
@@ -61,7 +61,7 @@ function App() {
           <Route path='projects/:id' element={
             <ProjectPage 
               openInNewWindow={openInNewWindow} 
-              getSpecificData={getSpecificData}
+              getSpecificProject={getSpecificProject}
               /> } 
           />
         </Routes>
