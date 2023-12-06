@@ -7,14 +7,14 @@ const Data =
     projDescription: 'A 2D top-down shooter game made within Unity.',
     img: 'NeonRainGameplay.PNG',
     categories: {
-      language: 'c#',
+      language: 'C#',
       type: 'Game'
     },
     pageData : {
       bannerImg: 'NeonRainGameplay.PNG',
       dateStarted: '06/15/2023',
       status: 'Ongoing',
-      techUsed: ['c#', 'unity', ],
+      techUsed: ['C#', 'Unity', ],
       websiteLink: 'https://contradictivegames.itch.io/neon-rain',
       githubLink: 'https://github.com/dwilliams304/NeonRain',
       // descriptions will be split by react at every \n - backslashes otherwise are for easier viewing
@@ -40,14 +40,14 @@ const Data =
     projDescription: 'A React website built to showoff all of my projects.',
     img: 'PortfolioWebsite.PNG',
     categories: {
-      language: 'js',
+      language: 'JavaScript',
       type: 'Website'
     },
     pageData: {
       bannerImg: 'PortfolioWebsite.PNG',
       dateStarted: '08/11/2023',
       status: 'Ongoing',
-      techUsed: ['react', 'javascript', 'node'],
+      techUsed: ['React', 'JavaScript', 'Node'],
       websiteLink: 'https://daviswilliams-portfolio.vercel.app',
       githubLink: 'https://github.com/dwilliams304/personal-website',
       fullDescription: 'This project is maybe a bit self explanatory of why I made it. \
@@ -63,19 +63,39 @@ const Data =
     projDescription: 'A React website that can tell you the weather/conditions of any city',
     img: 'WeatherApp.PNG',
     categories: {
-      language: 'js',
+      language: 'JavaScript',
       type: 'Website'
     },
     pageData: {
       bannerImg: 'WeatherApp.PNG',
       dateStarted: '10/28/2023',
       status: 'Completed',
-      techUsed: ['react', 'javascript', 'node'],
+      techUsed: ['React', 'JavaScript', 'Node'],
       websiteLink: 'https://dw-project-weather-app.vercel.app/',
       githubLink: 'https://github.com/dwilliams304/weather-app',
       fullDescription: 'This little Weather App was made within a day! I wanted to challenge myself \
       to be able to design and develop a little project quickly that works! \
       \n (same things as before, no full description yet, will potentially have one later)',
+      imgs: ['', '', '',]
+    }
+  },
+  {
+    projID: 3,
+    projName: 'HRF: Asylum Reports Generator',
+    projDescription: 'The Asylum Office Grant Rate Tracker provides asylum seekers, researchers, policymakers, and the public an interactive tool to explore USCIS data on Asylum Office decisions',
+    img: 'https://bwsrltsxndfbxnthgmlt.supabase.co/storage/v1/object/sign/Personal%20Projects/HRF_Banner.PNG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQZXJzb25hbCBQcm9qZWN0cy9IUkZfQmFubmVyLlBORyIsImlhdCI6MTcwMTgzMTc0MiwiZXhwIjoxNzMzMzY3NzQyfQ.Sz-wUbcTyo9ODLXOwE1V75Ss2xtCmRznWprXAIUiN8Q&t=2023-12-06T03%3A02%3A15.926Z',
+    categories: {
+      language: 'JavaScript',
+      type: 'Website'
+    },
+    pageData: {
+      bannerImg: 'HRF_Banner.PNG',
+      dateStarted: '11/28/2023',
+      status: 'Completed',
+      techUsed: ['React', 'Redux', 'JavaScript', 'Node'],
+      websiteLink: '',
+      githubLink: 'https://github.com/dwilliams304/asylum-rg-fe-starter',
+      fullDescription: 'No description yet!',
       imgs: ['', '', '',]
     }
   },

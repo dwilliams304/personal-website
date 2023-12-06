@@ -34,7 +34,7 @@ function ProjectPage(props){
         <div className="project-page-container">
             <div className="project-page-header-container">
                 <img className="project-page-banner" src={`/assets/imgs/projects/${bannerImg}`} alt='banner'
-                onClick={() => openInNewWindow(`${websiteLink}`)}/>
+                onClick={() => openInNewWindow(websiteLink ? websiteLink : githubLink)}/>
                 <div className="project-page-header">
                     <h2>{project.projName}</h2>
                     <h3>Tech used: {
