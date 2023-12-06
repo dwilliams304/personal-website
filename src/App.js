@@ -5,7 +5,6 @@ import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
 import ProjectList from './components/pages/project/ProjectList';
 import ProjectPage from './components/pages/project/ProjectPage';
-import ProjectData from './data/ProjectData';
 import {Routes, Route} from 'react-router-dom';
 import { socialLinks, projectTypes } from './data';
 import { supabase } from './supabaseClient';
