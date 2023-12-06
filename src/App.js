@@ -41,7 +41,6 @@ function App() {
         .select('*')
         .eq('project_id', id)
 
-        console.log('Data: ', data[0]);
         if(data !== null) return data[0];
     }
     catch(error){
