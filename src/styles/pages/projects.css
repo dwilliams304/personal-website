@@ -103,6 +103,7 @@
 
 .project-page-banner {
     max-width: 35%;
+    object-fit: cover;
     border: 3px solid var(--secondaryColor);
     margin: 1rem;
     &:hover{
@@ -149,6 +150,10 @@
 .project-page-details{
     margin: 1rem;
     text-indent: 50px;
+}
+.project-page-details h2{
+    text-align: center;
+    border-bottom: 1px solid var(--mainColor);
 }
 .project-page-details p {
     font-size: 20px;

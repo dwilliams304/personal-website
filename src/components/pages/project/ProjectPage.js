@@ -68,6 +68,7 @@ function ProjectPage(props){
 
                 {/* at every '\n' -> split into a new <p> */}
             <div className="project-page-details">
+                <h2>What's this project about?</h2>
                 {
                         fullDescription.split("\n").map((paragraph, i) => {
                             return <p key={i}>{paragraph}</p>
