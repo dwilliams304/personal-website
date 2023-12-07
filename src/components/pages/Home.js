@@ -10,7 +10,7 @@ export default function Home(){
     return(
         <div className='home'>
             <h2>Hello.</h2>
-            <img className="img-coin" src="https://shorturl.at/cPT03" alt="headshot"/>
+            <img className="img-coin" src="https://media.licdn.com/dms/image/D5603AQHEj5uIBI3Qdg/profile-displayphoto-shrink_200_200/0/1693500191424?e=1707350400&v=beta&t=i3MSpn-IkIRI_msHHWiBAy8cagf6-05_d4_sZxbaBg0" alt="headshot"/>
             <div className="container ">
                 <div className="introduction about-me">
                     <h2>My name is Davis.</h2>
