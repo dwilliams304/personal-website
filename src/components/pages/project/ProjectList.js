@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Project from './Project';
+import ProjectCard from './ProjectCard';
 
 export default function ProjectList(props){
     const initialData = props.projects;
@@ -53,13 +53,13 @@ export default function ProjectList(props){
                     projects.length === 0 ? 
                     initialData.map((proj, idx) => {
                         return(
-                            <Project project={proj} key={idx} />
+                            <ProjectCard project={proj} key={idx} />
                         )
                     })
                     : 
                     projects.map((proj, idx) => {
                         return (
-                            <Project project={proj} key={idx}/>
+                            <ProjectCard project={proj} key={idx}/>
                         )
                     }) 
                 }

@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import { iconMap } from "../../../data/iconmap";
 
 
-export default function Project(props){
+export default function ProjectCard(props){
     const {project} = props;
     const nav = useNavigate();
 
@@ -21,8 +22,16 @@ export default function Project(props){
                 <img className='project-img' src={project.project_img} alt='project thumbnail'/>
             </div>
 
-            <div className='languages'>
+            {/* <div className='languages'>
                 <p>Language: {project.categories.language}</p>
+            </div> */}
+
+            <div className='languages'>
+                {
+                    project.tech_used.map((tech, i) => {
+                        return <span key={i}>{iconMap[tech]}</span>
+                    })
+                }
             </div>
 
         </div>
